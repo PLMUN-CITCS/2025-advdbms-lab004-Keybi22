@@ -1,10 +1,14 @@
+-- Step 1: Create the UniversityDB database if it doesn't exist
+CREATE DATABASE IF NOT EXISTS `UniversityDB`;
+
 -- Use the UniversityDB database
 USE `UniversityDB`;
 
--- Create the Students table with constraints
+-- Step 2: Create the Students table with correct constraints
 CREATE TABLE `Students` (
-   `StudentID` INT PRIMARY KEY AUTO_INCREMENT,  -- Auto-incrementing primary key (MySQL syntax)
-   `FirstName` VARCHAR(50) NOT NULL,  -- Student's first name (cannot be NULL)
-   `LastName` VARCHAR(50) NOT NULL,   -- Student's last name (cannot be NULL)
-   `EnrollmentDate` DATE             -- Date when the student enrolled
+   `StudentID` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,  -- StudentID column with auto_increment and primary key
+   `FirstName` VARCHAR(50) NOT NULL,  -- First name column (cannot be NULL)
+   `LastName` VARCHAR(50) NOT NULL,   -- Last name column (cannot be NULL)
+   `EnrollmentDate` DATE NULL,        -- EnrollmentDate column (can be NULL)
+   `Email` VARCHAR(100) NULL          -- Email column (can be NULL)
 );
