@@ -1,5 +1,3 @@
-Use `UniversityDB`;
-
 -- Step 1: Create the Students table with constraints
 CREATE TABLE `Students` (
    `StudentID` INT PRIMARY KEY AUTO_INCREMENT,  -- MySQL Example: AUTO_INCREMENT
