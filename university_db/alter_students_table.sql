@@ -1,5 +1,6 @@
-Use `UniversityDB`;
+-- Use the UniversityDB database
+USE `UniversityDB`;
 
--- Step 2: Alter the table to add an Email column
+-- Alter the table to add an Email column
 ALTER TABLE `Students`
-ADD `Email` VARCHAR(100);
+ADD `Email` VARCHAR(100);  -- Add Email column (NULL is allowed)
