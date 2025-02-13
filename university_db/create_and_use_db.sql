@@ -1,10 +1,10 @@
-Use `UniversityDB`;
+-- Use the UniversityDB database
+USE `UniversityDB`;
 
--- Step 1: Create the Students table with constraints
+-- Create the Students table with constraints
 CREATE TABLE `Students` (
-   `StudentID` INT PRIMARY KEY AUTO_INCREMENT,  -- MySQL Example: AUTO_INCREMENT
-   -- For other databases (e.g., PostgreSQL, SQL Server) you might use SERIAL or IDENTITY
-   `FirstName` VARCHAR(50) NOT NULL,
-   `LastName` VARCHAR(50) NOT NULL,
-   `EnrollmentDate` DATE
+   `StudentID` INT PRIMARY KEY AUTO_INCREMENT,  -- Auto-incrementing primary key (MySQL syntax)
+   `FirstName` VARCHAR(50) NOT NULL,  -- Student's first name (cannot be NULL)
+   `LastName` VARCHAR(50) NOT NULL,   -- Student's last name (cannot be NULL)
+   `EnrollmentDate` DATE             -- Date when the student enrolled
 );
