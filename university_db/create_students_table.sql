@@ -1,13 +1,13 @@
--- Create the UniversityDB database if it doesn't exist
+-- Step 1: Create the UniversityDB database if it does not exist
 CREATE DATABASE IF NOT EXISTS `UniversityDB`;
 
--- Use the UniversityDB database
+-- Step 2: Switch to UniversityDB to create the table
 USE `UniversityDB`;
 
--- Drop the table if it exists, to avoid errors during execution
+-- Step 3: Drop the Students table if it exists (to avoid conflicts)
 DROP TABLE IF EXISTS `Students`;
 
--- Create the Students table with the correct structure
+-- Step 4: Create the Students table
 CREATE TABLE `Students` (
    `StudentID` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
    `FirstName` VARCHAR(50) NOT NULL,
